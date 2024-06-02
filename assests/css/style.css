@@ -585,6 +585,7 @@
 .box-2 span {
     color: #9A9EA7;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .cradit-link:hover {
