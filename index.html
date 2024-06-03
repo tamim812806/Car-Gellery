@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery</title>
+
+    <link rel="shortcut icon" type="image/icon" href="assests/images/logo/logo.png"/>
+
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <link rel="stylesheet" href="assests/bootstrap-5/css/bootstrap.min.css">
+    <script src="assests/bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="assests/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="assests/bootstrap-5/js/bootstrap.popper.min.js"></script>
+
+    <link rel="stylesheet" href="assests/fontawousome/css/all.css">
+    <script src="assests/fontawousome/js/all.js"></script>
+
+    <link rel="stylesheet" href="assests/swiper-js/swiper-bundle.min.css">
+    <script src="assests/swiper-js/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+<!-- ================== Home Section Start =================== -->
+
+    <section id="home" class="welcome-hero">
+
+        <!-- ======= Navbar Section Start ======= -->
+
+        <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top shadow" aria-label="Offcanvas navbar large">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="assests/images/logo/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <img src="assests/images/logo/logo.png" class="offcanvas-title" id="offcanvasNavbar2Label">
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Used Cars</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Auctions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">New Cars</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sell Cars</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Local Dealers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Support</a>
+                    </li>
+                  </ul>
+                    <a href="#" class="sign-up-link">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="sign-up">Sign Up</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        <!-- ======= Navbar Section End ======= -->
+
+
+        <div class="container home-content">
+            <h2 class="home-title">Say hello to your next <br>
+                awesome vehicle</h2>
+            <p class="home-disription">Featuring Used, Wholesale and Salvage Cars, Trucks <br>
+                & SUVs for Sale</p>
+        </div>
+
+        <!-- ==================== Filte Section Start ======================= -->
+
+        <div class="container mx-auto">
+            <div class="filter row mx-auto">
+                <div class="filter-box col-md-2">
+                    <p>Type</p>
+                    <select class="form-select shadow-none" required>
+                        <option selected>Used Card</option>
+                        <option value="1">Card 1</option>
+                        <option value="2">Card 2</option>
+                        <option value="3">Card 3</option>
+                        <option value="4">Card 4</option>
+                    </select>
+                </div>
+                <div class="filter-box col-md-2">
+                    <p>Make</p>
+                    <select class="form-select shadow-none" required>
+                        <option selected>Infiniti</option>
+                        <option value="1">Card 1</option>
+                        <option value="2">Card 2</option>
+                        <option value="3">Card 3</option>
+                        <option value="4">Card 4</option>
+                    </select>
+                </div>
+                <div class="filter-box col-md-2">
+                    <select id="make" class="form-select shadow-none ext-flt" required>
+                        <option selected>Year</option>
+                        <option value="1">Card 1</option>
+                        <option value="2">Card 2</option>
+                        <option value="3">Card 3</option>
+                        <option value="4">Card 4</option>
+                    </select>
+                </div>
+                <div class="filter-box col-md-2">
+                    <select id="make" class="form-select shadow-none ext-flt" required>
+                        <option selected>Model</option>
+                        <option value="1">Card 1</option>
+                        <option value="2">Card 2</option>
+                        <option value="3">Card 3</option>
+                        <option value="4">Card 4</option>
+                    </select>
+                </div>
+                <div class="filter-box col-md-2">
+                    <select id="make" class="form-select shadow-none ext-flt" required>
+                        <option selected>Price</option>
+                        <option value="1">Card 1</option>
+                        <option value="2">Card 2</option>
+                        <option value="3">Card 3</option>
+                        <option value="4">Card 4</option>
+                    </select>
+                </div>
+                <div class="filter-box col-md-2">
+                    <button class="search-btn"><i class="fa-solid fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== Filte Section End ======================= -->
+
+    </section>
+
+<!-- ================== Home Section End =================== -->
+
+<!-- ===================== Brand Section Start =================== -->
+
+    <section class="brand" id="brand">
+        <div class="container mx-auto">
+            <div class="swiper slide-contener mySwiper-1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-1.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-2.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-3.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-4.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-5.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-6.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-7.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-8.png" alt="">
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <img src="assests/images/brand/brand-9.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+<!-- ===================== Brand Section Start =================== -->
+
+<!-- ===================== Action Section Start ====================== -->
+
+<section id="auctions" class="auctions">
+    <div class="container">
+        <h2 class="section-title">Active auctions</h2>
+
+                <div class="auctions-content swiper mySwiper-2 mt-4">
+                    <div class="swiper-wrapper">
+
+                       <div class="card swiper-slide">
+                                <div class="card-img-top">
+                                    <img class="img-fluid" src="assests/images/cars/car-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">2013 Subaru Forester</h4>
+                                    <p class="card-text">11 475 Miles • #20199832</p>
+                                    <div class="brand-box">
+                                        <img class="brand-logo" src="assests/images/brand/Brand-Logo-1.png" alt="">
+                                        <div class="brand-text">
+                                            <h4>Subaru Champlin <br>
+                                                <span>Seller</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="pricing">
+                                        <span>$21,480</span>
+                                        <a href="#" class="price-btn">Buy Now</a>
+                                    </div>
+                                </div>
+                       </div>
+
+                       <div class="card swiper-slide">
+                        <div class="card-img-top">
+                            <img class="img-fluid" src="assests/images/cars/car-2.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">2010 BMW X3</h4>
+                            <p class="card-text">11 475 Miles • #20199832</p>
+                            <div class="brand-box">
+                                <img class="brand-logo" src="assests/images/brand/Brand-Logo-2.png" alt="">
+                                <div class="brand-text">
+                                    <h4>BMW Dealer Liana<br>
+                                        <span>Seller</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                                <span>$36,800</span>
+                                <a href="#" class="price-btn">Buy Now</a>
+                            </div>
+                        </div>
+               </div>
+
+               <div class="card swiper-slide">
+                <div class="card-img-top">
+                    <img class="img-fluid" src="assests/images/cars/car-3.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">2016 Toyota BRZ</h4>
+                    <p class="card-text">11 475 Miles • #20199832</p>
+                    <div class="brand-box">
+                        <img class="brand-logo" src="assests/images/brand/Brand-Logo-3.png" alt="">
+                        <div class="brand-text">
+                            <h4>Toyota Turnpike<br>
+                                <span>Seller</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="pricing">
+                        <span>$29,500</span>
+                        <a href="#" class="price-btn">Buy Now</a>
+                    </div>
+                </div>
+       </div>
+                       <div class="card swiper-slide">
+                                <div class="card-img-top">
+                                    <img class="img-fluid" src="assests/images/cars/car-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">2013 Subaru Forester</h4>
+                                    <p class="card-text">11 475 Miles • #20199832</p>
+                                    <div class="brand-box">
+                                        <img class="brand-logo" src="assests/images/brand/Brand-Logo-1.png" alt="">
+                                        <div class="brand-text">
+                                            <h4>Subaru Champlin <br>
+                                                <span>Seller</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="pricing">
+                                        <span>$21,480</span>
+                                        <a href="#" class="price-btn">Buy Now</a>
+                                    </div>
+                                </div>
+                       </div>
+
+                       <div class="card swiper-slide">
+                        <div class="card-img-top">
+                            <img class="img-fluid" src="assests/images/cars/car-2.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">2010 BMW X3</h4>
+                            <p class="card-text">11 475 Miles • #20199832</p>
+                            <div class="brand-box">
+                                <img class="brand-logo" src="assests/images/brand/Brand-Logo-2.png" alt="">
+                                <div class="brand-text">
+                                    <h4>BMW Dealer Liana<br>
+                                        <span>Seller</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                                <span>$36,800</span>
+                                <a href="#" class="price-btn">Buy Now</a>
+                            </div>
+                        </div>
+               </div>
+
+               <div class="card swiper-slide">
+                <div class="card-img-top">
+                    <img class="img-fluid" src="assests/images/cars/car-3.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">2016 Toyota BRZ</h4>
+                    <p class="card-text">11 475 Miles • #20199832</p>
+                    <div class="brand-box">
+                        <img class="brand-logo" src="assests/images/brand/Brand-Logo-3.png" alt="">
+                        <div class="brand-text">
+                            <h4>Toyota Turnpike<br>
+                                <span>Seller</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="pricing">
+                        <span>$29,500</span>
+                        <a href="#" class="price-btn">Buy Now</a>
+                    </div>
+                </div>
+       </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+    </div>
+</section>
+
+<!-- ===================== Action Section End ====================== -->
+
+
+<!-- ========================== Online Auto Auctions Start ======================== -->
+
+<section class="Online-Auto-Auctions">
+    <div class="container">
+        <div class="section-titel">
+            <h4>Online Auto Auctions</h4>
+            <span>Vehicles available for sale</span>
+        </div>
+    
+        <div class="main row g-3">
+            <div class="main-text col-md-5">
+                <div class="point-box">
+                    <span>2</span>
+                    <span>0</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>9</span>
+                </div>
+                <p class="discription">Along with conventional advertising and below the line activities, organizations and corporate bodies have come to realize that they need to invest in trade shows in order to create maximum recall for their product or brand name.</p>
+                <a href="#" class="explore-btn">Explore All Auctions</a>
+            </div>
+            <div class="main-images col-md-7"></div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- ========================== Online Auto Auctions End ======================== -->
+
+<!-- ============================ Find car by Section Start ========================== -->
+
+<section class="find-car-by">
+    <div class="container">
+        <div class="find-car-header">
+            <h4>Find car by</h4>
+            <div class="item-box">
+                <span>Body types</span>
+                <span class="find-active">Makes</span>
+                <span>Models</span>
+                <span>Trending</span>
+            </div>
+        </div>
+
+        <div class="main-box row g-3">
+            <div class="logo-box col-md-5">
+                <span class="title">Popular Makes</span>
+                <div class="find-box">
+                    <div class="find-logo-box">
+                        <img src="assests/images/brand/brand-9.png" alt="" class="logo">
+                        <h4 class="text">Subaru <br>
+                            <span>2,345</span>
+                        </h4>
+                    </div>
+                    <div class="find-logo-box">
+                        <img src="assests/images/brand/brand-2.png" alt="" class="logo">
+                        <h4 class="text">Mercedes-Benz <br>
+                            <span>12,890</span>
+                        </h4>
+                    </div>
+                    <div class="find-logo-box">
+                        <img src="assests/images/brand/brand-3.png" alt="" class="logo">
+                        <h4 class="text">Volkswagen <br>
+                            <span>19,300</span>
+                        </h4>
+                    </div>
+                    <div class="find-logo-box">
+                        <img src="assests/images/brand/brand-4.png" alt="" class="logo">
+                        <h4 class="text">Hyundai <br>
+                            <span>8,409</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-box mx-auto col-md-7 row g-5">
+                <span class="title">Other Makes</span>
+                <div class="col-md-6 left-text-box">
+                    <div class="single-content">
+                        <p>Acura</p>
+                        <span>1,752</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Audi</p>
+                        <span>2,415</span>
+                    </div>
+                    <div class="single-content">
+                        <p>BMW</p>
+                        <span>4,590</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Buick</p>
+                        <span>2,577</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Cadillac</p>
+                        <span>2,201</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Chevrolet</p>
+                        <span>24,187</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Chrysler</p>
+                        <span>3,473</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Dodge</p>
+                        <span>9,325</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Ford</p>
+                        <span>26,175</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Freightliner</p>
+                        <span>769</span>
+                    </div>
+                    <div class="single-content">
+                        <p>GMC</p>
+                        <span>5,403</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Harley</p>
+                        <span>1,069</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Honda</p>
+                        <span>14,516</span>
+                    </div>
+                </div>
+                <div class="col-md-6 right-text-box">
+                    <div class="single-content">
+                        <p>Acura</p>
+                        <span>1,752</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Audi</p>
+                        <span>2,415</span>
+                    </div>
+                    <div class="single-content">
+                        <p>BMW</p>
+                        <span>4,590</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Buick</p>
+                        <span>2,577</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Cadillac</p>
+                        <span>2,201</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Chevrolet</p>
+                        <span>24,187</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Chrysler</p>
+                        <span>3,473</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Dodge</p>
+                        <span>9,325</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Ford</p>
+                        <span>26,175</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Freightliner</p>
+                        <span>769</span>
+                    </div>
+                    <div class="single-content">
+                        <p>GMC</p>
+                        <span>5,403</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Harley</p>
+                        <span>1,069</span>
+                    </div>
+                    <div class="single-content">
+                        <p>Honda</p>
+                        <span>14,516</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ Find car by Section End ========================== -->
+
+<!-- ============================= Footer Section Start ============================== -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main mx-atuo row g-5">
+            <div class="col-lg-3 col-md-6">
+                <span class="ftr-title">About</span>
+                <a href="#" class="ftr-link">How it works</a>
+                <a href="#" class="ftr-link">Careers</a>
+                <a href="#" class="ftr-link">About us</a>
+                <a href="#" class="ftr-link">Media</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <span class="ftr-title">Community</span>
+                <a href="#" class="ftr-link">Against Discrimination</a>
+                <a href="#" class="ftr-link">Invite friends</a>
+                <a href="#" class="ftr-link">Gift cards</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <span class="ftr-title">Become seller</span>
+                <a href="#" class="ftr-link">Add your vehicle</a>
+                <a href="#" class="ftr-link">Business account</a>
+                <a href="#" class="ftr-link">Resource Center</a>
+                <a href="#" class="ftr-link">Community</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <span class="ftr-title">Bookings support</span>
+                <a href="#" class="ftr-link">Updates for COVID-19</a>
+                <a href="#" class="ftr-link">Help Center</a>
+                <a href="#" class="ftr-link">Support</a>
+                <a href="#" class="ftr-link">Trust & Safety</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <div class="footer-end">
+        <div class="box-1">
+            <p>Privacy Policy</p>
+            <p>Term of Use</p>
+            <span>&copy; 2024 All rights reserved by <a class="cradit-link" href="#">Tamim</a></span>
+        </div>
+        <div class="box-2">
+            <span class="english">English</span>
+            <span class="usd">USD</span>
+        </div>
+    </div>
+
+<!-- ============================= Footer Section End ============================== -->
+
+    <script src="assests/js/main.js"></script>
+</body>
+</html>

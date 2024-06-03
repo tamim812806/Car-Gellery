@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --skin-color: #7963F0;
+    --normar-text-color: #0D0A19
+}
+/* ================== Home Section Start ================= */
+
+/* ================== Navbar Start ================== */
+
+.nav-item .nav-link {
+    color: var(--normar-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all ease .2s;
+}
+
+.nav-item .nav-link:hover {
+    opacity: .8;
+}
+
+
+.offcanvas-body .sign-up-link {
+    align-self: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.sign-up-link .fa-user {
+    padding: 8px 10px;
+    color: #9A9EA7;
+    background-color: #f5f6f7;
+    border-radius: 4px;
+}
+.sign-up-link .sign-up {
+    margin-left: 4px;
+    text-align: center;
+    color: #9A9EA7;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ================== Navbar End ================== */
+
+
+.welcome-hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../images/welcome-hero/hero-banner.png) center center no-repeat;
+    background-size: cover;
+}
+
+.home-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.home-content .home-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+}
+.home-content .home-disription {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* ================== Filter Section Start ================== */
+
+.filter {
+    height: fit-content;
+    width: 95%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    padding: 14px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 3px 4px 0px #999BA826;
+}
+
+.filter-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.filter-box p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: #9A9EA7;
+    margin: 2px 0 0 10px;
+}
+
+.filter-box .form-select {
+    width: 100%;
+    border: none !important;
+    color: #0D0A19;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+}
+
+.ext-flt {
+    color: #9A9EA7 !important;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+}
+
+.search-btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+    color: #fff;
+    background-color: #7963F0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0px;
+    transition: all ease .2s;
+}
+
+.search-btn:hover {
+    background-color: #5d44ee;
+}
+
+/* ================== Filter Section End ================== */
+
+/* ================== Home Section End ================= */
+
+
+/* =================== Brand Section Start =================== */
+
+.brand {
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+
+.slide-contener {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.single-slide {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .single-slide img {
+    align-self: center;
+    width: 70px;
+  }
+
+
+/* =================== Brand Section End  =================== */
+
+
+/* ===================== Action Section Start ====================== */
+
+.auctions {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 50px;
+    padding-bottom: 50px;
+}
+
+.auctions-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-wrapper{
+    padding-bottom: 50px;
+}
+
+
+.swiper-wrapper .card {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    padding: 15px 10px 10px 10px;
+}
+
+.card .card-img-top {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-img-top img {
+    width: 100%;
+}
+
+.card-body .card-title {
+    color: #0D0A19;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-body .card-text {
+    color: #9A9EA7;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-body .brand-box {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.brand-box img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.brand-box h4 {
+    color: #0D0A19;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.brand-box h4 span {
+    color: #9A9EA7;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-body .pricing{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pricing span {
+    color: #0D0A19;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pricing .price-btn {
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #7963F0;
+    border-radius: 5px;
+    transition: all ease .2s;
+}
+.price-btn:hover {
+    background-color: #5d44ee;
+}
+
+
+/* ===================== Action Section End ====================== */
+
+/* ===================== Online-Auto-Auctions Section Start ====================== */
+
+.Online-Auto-Auctions {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 25px;
+}
+
+.Online-Auto-Auctions .section-titel h4 {
+    color: #0D0A19;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+.Online-Auto-Auctions .section-titel span {
+    color: #0D0A19;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+.Online-Auto-Auctions .main {
+    height: 360px;
+    position: relative;
+}
+
+.main-text {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.point-box {
+    position: relative;
+    margin: 25px 0 20px 0;
+}
+
+.point-box span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0D0A19;
+    background-color: #fff;
+    border: 1px solid #9A9EA7;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.main-text .discription {
+    color: #9A9EA7;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.main-text .explore-btn {
+    width: fit-content;
+    height: fit-content;
+    color: #9A9EA7;
+    text-decoration: none;
+    background-color: #F5F6F7;
+    position: relative;
+    top: 30px;
+    padding: 12px 16px;
+    border-radius: 5px;
+}
+
+.explore-btn:hover {
+    background-color: #eceff0;
+}
+
+
+.main-images {
+    height: 520px;
+    background: url(../images/Online-Auto-Auctions/Online-Auto-Auctions-main-img.png) no-repeat;
+    background-position: right;
+    background-size: 520px;
+    position: relative;
+    top: -125px;
+    align-items: center;
+    justify-content: right;
+}
+
+/* ===================== Online-Auto-Auctions Section End ====================== */
+
+/* ======================== Find by car section Start =================== */
+
+.find-car-by {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.find-car-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+
+.find-car-header h4 {
+    color: #0D0A19;
+    font-size: 28px;
+    font-weight: 700;
+}
+.find-car-header span {
+    padding: 10px 18px;
+    font-size: 14px;
+    color: #9A9EA7;
+    cursor: pointer;
+}
+
+.find-car-header span.find-active {
+    color: #0D0A19;
+    font-weight: 700;
+    border: 1px solid #9A9EA7;
+    border-radius: 5px;
+}
+
+.main-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+}
+
+.logo-box {
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.logo-box span.title {
+    color: #9A9EA7;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+}
+
+.logo-box .find-box {
+    position: relative;
+    top: 25px;
+    height: fit-content;
+}
+
+.logo-box .find-logo-box {
+    display: flex;
+    margin: 40px 20px;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    top: 40px;
+}
+
+.find-logo-box img.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.find-logo-box h4.text {
+    color: #0D0A19;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.find-logo-box h4.text span {
+    color: #9A9EA7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-box {
+    width: 100%;
+    position: relative;
+}
+
+.text-box span.title {
+    color: #9A9EA7;
+    font-size: 14px;
+    position: absolute;
+    top: -70px;
+}
+
+.text-box .left-text-box {
+    position: relative;
+    top: 0;
+}
+
+
+
+.single-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-content p {
+    color: #0D0A19;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: .8;
+}
+.single-content span {
+    color: #0D0A19;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* ======================== Find by car section End =================== */
+
+
+/* ===================== Footer Section Start ======================== */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #F5F6F7;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.footer-main div.col-lg-3 {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-main .ftr-title {
+    color: #0D0A19;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-main .ftr-link {
+    text-decoration: none;
+    margin: 5px 0;
+    color: #9A9EA7;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-main .ftr-link:hover {
+    color: #76777c;
+}
+
+.footer-end {
+    width: 85%;
+    margin: auto;
+    height: fit-content;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-end .box-1 {
+    display: flex;
+}
+.box-1 p {
+    color: #0D0A19;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 15px;
+}
+.box-1 span {
+    color: #9A9EA7;
+    margin-left: 5px;
+}
+.box-1 .cradit-link {
+    text-decoration: none;
+    color: #9A9EA7;
+}
+
+.box-2 span {
+    color: #9A9EA7;
+    font-weight: 700;
+}
+
+.cradit-link:hover {
+    color: #56575a;
+}
+
+/* ===================== Footer Section End ======================== */
+
+
+
+/* =================== Responsive Section Start ================== */
+
+@media (max-width: 767px) {
+
+    /* Home Section Responsive Start  */
+
+    .home-content {
+        top: -30px;
+    }
+
+    .home-content .home-title {
+        font-size: 36px;
+    }
+    .home-content .home-disription {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .filter {
+        gap: 20px;
+        bottom: -150px;
+    }
+    .filter-box {
+        border-bottom: 1px solid #EDE8E9;
+    }
+    .filter-box:last-child {
+        border: none !important;
+    }
+
+    /* Home Section Responsive End  */
+
+    /* Brand Section Responsive Start */
+
+    .brand {
+        margin-top: 250px;
+    }
+
+    /* Brand Section Responsive End */
+
+    /* Online-Auto-Auctions Start  */
+
+    .Online-Auto-Auctions {
+        height: 390px;
+        background: url(../images/Online-Auto-Auctions/Online-Auto-Auctions-main-bg.jpg) center center no-repeat;
+        background-size: cover;
+        top: 50px;
+        padding-top: 15px;
+    }
+
+    .main-images {
+        display: none;
+    }
+
+    .Online-Auto-Auctions .container {
+        margin-top: 20px;
+    }
+
+    .Online-Auto-Auctions .section-titel h4 {
+        font-size: 24px;
+    }
+
+    .main-text .explore-btn {
+        top: 15px;
+    }
+
+    /* Online-Auto-Auctions End */
+
+
+    /* Find by car section setar */
+
+    .find-car-header {
+        display: block;
+    }
+    .find-car-header h4 {
+        margin: 50px 0;
+        padding-top: 50px;
+    }
+
+    .find-car-header span{
+        padding: 0;
+        padding: 5px 10px !important;
+    }
+    .logo-box span.title {
+        margin-left: 20px;
+    }
+
+    .text-box .right-text-box {
+        position: relative;
+        top: -50px;
+    }
+
+    /* Find by car section End */
+
+    /* Footer Section Responsive Start  */
+
+    .footer {
+        display: none;
+    }
+
+    .footer-end {
+        width: 100% !important;
+        background-color: #F5F6F7;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-1 {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+    .box-1 p, .box-1 span {
+        padding: 10px 0;
+    }
+    .box-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        position: relative;
+    }
+
+    /* Footer Section Responsive End */
+
+}
+
+@media (max-width: 991px) {
+
+    /* Find by car section setar */
+
+
+
+    /* Find by car section End */
+
+}
+
+/* =================== Responsive Section End ================== */
